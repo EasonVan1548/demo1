@@ -1,9 +1,11 @@
 #include<iostream>
-#include "animal.h"
+#include <memory>
+#include "Cat.h"
 using namespace std;
 int main(){
     cout<<"Hello, World!"<<endl;
-    class Animal a;
-    a.eat();
+     unique_ptr<Animal> cat_1=make_unique<Cat>();
+    cat_1->eat();
+    
     return 0;
 }

@@ -1,5 +1,7 @@
 class Animal{
 public:
-    void eat();
-    void sleep();
+    virtual void eat();
+    virtual void sleep();
+    Animal();
+    virtual ~Animal();
 };
